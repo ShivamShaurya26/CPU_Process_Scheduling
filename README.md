@@ -9,12 +9,12 @@ An implementation of various CPU scheduling algorithms in C++. The algorithms in
    algorithm. In FCFS scheduling, the process that arrives first is executed first, regardless of its burst time or priority. This can lead to poor performance, as longer running
    processes will block shorter ones from being executed. It is commonly used in batch systems where the order of the processes is important.
 
-2. Preemptive Scheduling-
+2. Preemptive Priority based Scheduling-
    It is a priority scheduling algorithm in which the CPU is preempted when a new process arrives i.e. it will start executing the new process if the newly arrived process is of
    higher priority than the currently running process. To read more about preemptive scheduling you may refer to this.
 
 
-3. Non-Preemptive Scheduling-
+3. Non-Preemptive Priority based Scheduling-
    In this algorithm, if a new process of higher priority than the currently running process arrives, then the currently executing process is not disturbed. Rather, the newly arrived
    process is put at the head of the ready queue, i.e. according to its priority in the queue. And when the execution of the currently running process is complete, the newly arrived
    process will be given the CPU.
